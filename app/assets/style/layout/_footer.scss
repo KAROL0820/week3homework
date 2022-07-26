@@ -1,0 +1,125 @@
+.footer{
+    background-color:#AA0601 ;
+    padding: 48px 12px 32px 12px;
+    @include phone(){
+        padding:24px 12px
+    }
+    @include ipad(){
+        padding: 48px 12px 40px 12px;
+    }
+}
+.footer-content,.privacy{
+    @include container;
+}
+.footer-content{
+    @include phone(){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+
+    }
+}
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-manu{
+    display: flex;
+    justify-content: space-between;
+    li{ 
+        margin-right: 48px;
+        a{
+            color: white;
+        }
+    }
+    @include phone(){
+        display: none;
+    }
+}
+.footer-social{
+    display: flex;
+    li{
+        margin-left: 32px;
+        @include phone(){
+            margin-left: 8px;
+        }
+            img{
+                max-width:48px ;
+                @include ipad (){
+                    max-width: 40px;
+                }  
+                @include phone(){
+                    max-width: 24px;
+                }
+        }
+    }
+}
+.footer-contact{
+    margin-top: 24px;
+    border-bottom: 1px solid white;
+    padding-bottom:32px ;
+    li{
+        a{
+            color: white;
+            font-size: 36px;
+            @include phone(){
+                font-size: 16px;
+            }
+        }
+    }
+    @include phone(){
+        margin-top: 0px;
+        border-bottom: none;
+       padding-bottom: 24px;
+    
+    }
+}
+.material-symbols-outlined{
+    font-size: 40px;
+    color: white;
+    margin-right:16px ;
+    @include phone(){
+        font-size: 20px;
+    }
+}
+.privacy{
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    p{
+        color: white;
+        font-size: 16px;
+        @include phone(){
+            margin-bottom: 8px;
+        }
+    }
+    @include phone{
+        display: block;
+        padding-top: 24px;
+    }
+}
+.privacy-list{
+    display: flex;
+    justify-content: space-between;
+    li{
+        margin-left: 48px;
+        @include phone{
+            margin-left: 0;
+            margin-bottom: 8px;
+        }
+        a{
+            color: white;
+            font-size: 14px;
+            @include phone(){
+                font-size: 16px;
+            }
+        }
+    }
+    @include phone(){
+        display: block;
+
+    }
+}
+
