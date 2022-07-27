@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -61,9 +62,38 @@ a {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
+/*font-size*/
+.fz64 {
+  font-size: 64px; }
+
+.fz48 {
+  font-size: 48px; }
+
+.fz36 {
+  font-size: 36px; }
+
+.fz24 {
+  font-size: 24px; }
+
+.fz20 {
+  font-size: 20px; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.black {
+  font-weight: 900; }
+
+.medium {
+  font-weight: 500; }
+
+/**/
+/**/
 .header {
-  background-color: #AA0601;
-  padding: 0 12px; }
+  background-color: #AA0601; }
   .header .header-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -76,8 +106,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 1269px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 0 12px; }
     @media (max-width: 768px) {
       .header .header-content {
         -webkit-box-orient: vertical;
@@ -132,17 +163,15 @@ body {
 
 .footer {
   background-color: #AA0601;
-  padding: 48px 12px 32px 12px; }
-  @media (max-width: 768px) {
-    .footer {
-      padding: 24px 12px; } }
+  padding: 48px 0 32px 0; }
   @media (max-width: 992px) {
     .footer {
-      padding: 48px 12px 40px 12px; } }
+      padding: 48px 0 40px 0; } }
 
 .footer-content, .privacy {
-  max-width: 1269px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px; }
 
 @media (max-width: 768px) {
   .footer-content {
@@ -264,5 +293,313 @@ body {
   @media (max-width: 768px) {
     .privacy-list {
       display: block; } }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 24px 0; } }
+
+.banner {
+  background-image: url(../images/home-header.png);
+  background-size: cover;
+  background-position: center;
+  height: 787px; }
+
+.banner-content {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px;
+  color: #650300;
+  text-align: right;
+  padding-top: 296px; }
+  .banner-content h2 {
+    margin-bottom: 4px; }
+  .banner-content .btn {
+    padding: 6px 12px;
+    font-size: 20px;
+    background-color: #AA0601;
+    color: #FFF; }
+  .banner-content .btn:hover {
+    color: #AA0601;
+    background-color: #FFF;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
+h3 {
+  color: #650300; }
+
+.pd80 {
+  padding: 80px 0; }
+
+/*專業服務*/
+.sever {
+  background-color: #FBF2F2; }
+
+.sever-content {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px;
+  text-align: center; }
+
+.sever-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 33px; }
+  .sever-list li {
+    width: 24%;
+    margin-right: 1%; }
+    .sever-list li img {
+      max-width: 100px;
+      margin-bottom: 24px; }
+    .sever-list li h4 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #650300;
+      margin-bottom: 8px; }
+    .sever-list li p {
+      text-align: left; }
+
+/*經典系列*/
+.classic-contenrt {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px;
+  text-align: center; }
+
+.classic-list {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .classic-list li {
+    width: 32.33%;
+    margin-right: 2%; }
+    .classic-list li:last-child {
+      margin-right: 0px; }
+    .classic-list li p {
+      margin-top: 8px;
+      color: #AA0601; }
+
+/*聯名*/
+.design {
+  background-image: url(../images/index-bg.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+
+.design-content {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px; }
+  .design-content h3 {
+    color: white; }
+
+.design-list {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .design-list li {
+    width: 50%; }
+    .design-list li p {
+      color: #AA0601;
+      background-color: white; }
+
+.design-double {
+  background-image: url(../images/home-section4-1.png);
+  background-position: center;
+  background-size: cover;
+  height: 240px; }
+
+.design-youth {
+  background-image: url(../images/home-section4-2.png);
+  background-position: center;
+  background-size: cover;
+  height: 240px; }
+
+/*顧客推薦*/
+.customer {
+  text-align: center; }
+
+.customer-content {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px; }
+
+.customer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 48px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .customer-list li {
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 6px #00000029;
+            box-shadow: 0px 2px 6px #00000029;
+    width: 23%;
+    margin: 1%; }
+
+.card {
+  padding: 16px;
+  height: 205px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .card .name {
+    margin-bottom: 8px; }
+  .card span {
+    color: #707070;
+    font-size: 14px;
+    margin-top: auto; }
+
+/*表格*/
+.form {
+  background-color: #FBF2F2; }
+
+.form-content {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px;
+  max-width: 636px;
+  margin: 0 auto; }
+  .form-content h3 {
+    text-align: center;
+    margin-bottom: 48px; }
+  .form-content p {
+    margin-bottom: 24px; }
+
+.title {
+  display: block;
+  margin-bottom: 8px; }
+
+input[type="text"] {
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #000;
+  margin-bottom: 16px; }
+
+input[type="textarea"] {
+  height: 136px;
+  width: 100%;
+  padding: 6px 12px 102px;
+  border: 1px solid #000;
+  margin-bottom: 16px; }
+
+.agree {
+  margin-bottom: 48px; }
+  .agree input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px; }
+
+.submit {
+  display: block;
+  margin: 0 auto;
+  width: 416px;
+  color: #FFF;
+  padding: 16px;
+  border: none;
+  font-weight: bold;
+  background-color: #AA0601; }
+
+.submit:hover {
+  color: #AA0601;
+  background-color: #FFF;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer; }
+
+/*rwd*/
+@media (max-width: 992px) {
+  .sever-list li {
+    width: 48%; }
+    .sever-list li img {
+      max-width: 83px; }
+  .classic-list {
+    display: block; }
+    .classic-list li {
+      width: 51%;
+      margin: 0 auto 24px; }
+      .classic-list li:last-child {
+        margin: 0 auto; }
+  .design {
+    background-image: url(../images/index-bg-sm.png); }
+  .design-list {
+    margin-top: 48px;
+    display: block; }
+    .design-list li {
+      width: 100%;
+      margin-bottom: 24px; }
+  .customer-list li {
+    width: 48%;
+    margin-bottom: 24px; }
+  .form-content {
+    max-width: 576px; }
+    .form-content p {
+      font-size: 16px; } }
+
+@media (max-width: 768px) {
+  .pd80 {
+    padding: 40px 0; }
+  .banner {
+    background-image: url(../images/home-header-sm.png);
+    height: 396px; }
+  .banner-content {
+    padding-top: 144px; }
+    .banner-content p {
+      font-size: 16px; }
+    .banner-content h2 {
+      font-size: 24px;
+      margin-bottom: 14px; } }
+
+@media (max-width: 768px) {
+  .sever-content > h3, .classic-contenrt > h3, .design-content > h3, .customer-content > h3 {
+    font-size: 24px; }
+  .sever-list li {
+    width: 100%;
+    margin-bottom: 33px; }
+  .classic-list li {
+    width: 100%; }
+  .design-double {
+    background-image: url(../images/home-section4-1-sm.png); }
+  .design-youth {
+    background-image: url(../images/home-section4-2-sm.png); }
+  .customer-list {
+    margin-top: 24px; }
+    .customer-list li {
+      width: 98%;
+      margin: 0 auto 16px; }
+      .customer-list li:last-child {
+        margin: 0 auto; }
+  .form-content {
+    max-width: 348px; }
+    .form-content input[type="text"], .form-content input[type="textarea"] {
+      width: 100%; }
+    .form-content button {
+      width: 100%; }
+  .agree label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 /*# sourceMappingURL=all.css.map */
