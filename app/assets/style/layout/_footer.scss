@@ -1,11 +1,9 @@
 .footer{
     background-color:#AA0601 ;
-    padding: 48px 12px 32px 12px;
-    @include phone(){
-        padding:24px 12px
-    }
+    padding: 48px 0 32px 0;
+    
     @include ipad(){
-        padding: 48px 12px 40px 12px;
+        padding: 48px 0 40px 0;
     }
 }
 .footer-content,.privacy{
@@ -123,3 +121,9 @@
     }
 }
 
+@include phone(){
+   .footer{
+    padding:24px 0 ;
+   }
+
+}

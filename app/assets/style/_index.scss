@@ -1,0 +1,328 @@
+.banner{
+    background-image: url(../images/home-header.png);
+    background-size: cover;
+    background-position: center;
+    height: 787px
+}
+.banner-content{
+    @include container;
+    color: #650300;
+    text-align: right;
+    padding-top: 296px;
+    h2{
+        margin-bottom: 4px;
+    }
+    .btn{
+        padding: 6px 12px;
+        font-size: 20px;
+        background-color:#AA0601;
+        color: #FFF;
+    }
+    .btn:hover{
+        color: #AA0601;
+        background-color: #FFF;
+        transition:0.5s ;
+    }
+}
+h3{
+    color:#650300 ;
+}
+.pd80{
+    padding: 80px 0;
+}
+/*專業服務*/
+.sever{
+    background-color:#FBF2F2 ;
+}
+.sever-content{
+    @include container;
+    text-align: center;
+
+}
+.sever-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 33px;
+    li{
+        width: 24%;
+        margin-right: 1%;
+        img{
+            max-width: 100px;
+            margin-bottom: 24px;
+        }
+        h4{
+            font-size: 24px;
+            font-weight: bold;
+            color:#650300 ;
+            margin-bottom: 8px;
+        }
+        p{
+            text-align: left;
+        }
+    }
+}
+/*經典系列*/
+.classic-contenrt{
+    @include container;
+    text-align: center;
+    
+}
+.classic-list{
+    margin-top: 48px;
+    display: flex;
+    li{
+        width: 32.33%;
+        margin-right: 2%;
+        &:last-child{
+            margin-right: 0px;
+        }
+       p{
+        margin-top: 8px;
+        color:#AA0601 ;
+       }
+    }
+}
+/*聯名*/
+.design{
+    background-image: url(../images/index-bg.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center
+}
+.design-content{
+    @include container;
+    h3{
+        color: white;
+    }
+}
+.design-list{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    li{
+        width: 50%;
+        p{
+            color: #AA0601;
+            background-color: white;
+        }
+    }
+}
+.design-double{
+    background-image: url(../images/home-section4-1.png);
+    background-position: center;
+    background-size: cover;
+    height:240px;
+}
+.design-youth{
+    background-image: url(../images/home-section4-2.png);
+    background-position: center;
+    background-size: cover;
+    height:240px;
+}
+/*顧客推薦*/
+.customer{
+    text-align: center;
+}
+.customer-content{
+    @include container;
+}
+.customer-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    justify-content: space-between;
+    li{
+        border: 1px solid #DEE2E6;
+        border-radius: 4px;
+        box-shadow: 0px 2px 6px #00000029;
+        width: 23%;
+        margin: 1%;
+    }
+}
+.card{
+    padding: 16px;
+    height: 205px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    .name{
+        margin-bottom: 8px;
+    }
+    span{
+        color: #707070;
+        font-size: 14px;
+        margin-top: auto;
+    }
+}
+/*表格*/
+.form{
+    background-color: #FBF2F2;
+    
+}
+.form-content{
+    @include container;
+    max-width:636px ;
+    margin: 0 auto;
+    h3{
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    p{
+        margin-bottom: 24px;
+    }
+}
+.title{
+    display: block;
+    margin-bottom: 8px;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 6px 12px;
+    border:1px solid #000;
+    margin-bottom: 16px;
+}
+input[type="textarea"]{
+    height: 136px;
+    width: 100%;
+    padding: 6px 12px 102px;
+    border:1px solid #000;
+    margin-bottom: 16px;
+}
+.agree{
+    margin-bottom: 48px;
+    input[type="checkbox"]{
+        width: 24px;
+        height: 24px;
+        margin-right: 4px;
+    }
+}
+.submit{
+    display: block;
+   margin: 0 auto;
+    width: 416px;
+    color: #FFF;
+    padding: 16px;
+    border: none;
+    font-weight: bold;
+    background-color:#AA0601;
+}
+.submit:hover{
+    color: #AA0601;
+    background-color: #FFF;
+    transition:0.5s ;
+    cursor: pointer;
+}
+/*rwd*/
+@include ipad(){
+    .sever-list{
+        li{
+            width: 48%;
+            img{
+                max-width: 83px;
+            }
+        }
+    }
+    .classic-list{
+        display: block;
+        li{
+           width: 51%;
+           margin: 0 auto 24px;
+           &:last-child{
+            margin: 0 auto;
+            }
+        }
+    }
+    .design{
+        background-image: url(../images/index-bg-sm.png);
+    }
+    .design-list{
+        margin-top: 48px;
+        display: block;
+        
+        li{
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+    .customer-list{
+        li{
+            width: 48%;
+            margin-bottom: 24px;
+        }
+    }
+    .form-content{
+        max-width:576px ;
+        p{
+            font-size: 16px;
+        }
+    }
+}
+@include phone (){
+    .pd80{
+        padding: 40px 0;
+    }
+    
+    .banner{
+        background-image: url(../images/home-header-sm.png);   
+        height: 396px;
+    }
+    .banner-content{
+        padding-top: 144px;
+        p{
+            font-size: 16px;
+        }
+        h2{
+            font-size: 24px;
+            margin-bottom: 14px;
+        }
+    }
+}
+@include phone(){
+    .sever-content>h3,.classic-contenrt>h3,.design-content>h3,.customer-content>h3{
+    font-size: 24px;
+}
+.sever-list{
+    li{
+        width: 100%;
+        margin-bottom: 33px;
+    }
+}
+.classic-list{
+    li{
+        width: 100%;
+    }
+  
+}
+    .design-double{
+        background-image: url(../images/home-section4-1-sm.png);
+    }
+    .design-youth{
+        background-image: url(../images/home-section4-2-sm.png);
+    }
+    .customer-list{
+        margin-top: 24px;
+        li{
+            width: 98%;
+            margin: 0 auto 16px;
+            &:last-child{
+                margin: 0 auto;
+                }
+        }
+    }
+    .form-content{
+        max-width:348px ;
+        input[type="text"],input[type="textarea"]{
+            width: 100%;
+        }
+        button{
+            width: 100%;
+        }
+    }
+    .agree{
+        label{
+            display: flex;
+        }
+    }
+}
+
