@@ -18,6 +18,13 @@
         }
     }
 }
+.header-list{
+  li{
+    a:hover{
+      opacity: 0.8;
+    }
+  }
+}
 h1{
     @include phone(){
             align-items: center;
