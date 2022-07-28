@@ -124,6 +124,9 @@ body {
                 align-items: center;
         padding: 0px; } }
 
+.header-list li a:hover {
+  opacity: 0.8; }
+
 @media (max-width: 768px) {
   h1 {
     -webkit-box-align: center;
