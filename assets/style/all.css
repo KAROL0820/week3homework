@@ -388,8 +388,12 @@ h3 {
     margin-right: 2%; }
     .classic-list li:last-child {
       margin-right: 0px; }
+    .classic-list li a:hover img {
+      opacity: 0.8; }
+    .classic-list li a:hover p {
+      background-color: #AA0601;
+      color: white; }
     .classic-list li p {
-      margin-top: 8px;
       color: #AA0601; }
 
 /*聯名*/
@@ -829,5 +833,108 @@ input[type="textarea"] {
     .sunglasses-list li {
       width: 98%;
       margin: 0 1% 48px; } }
+
+.store {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px;
+  padding: 96px 12px 80px 12px; }
+  .store h1 {
+    padding-left: 20px;
+    margin-bottom: 32px;
+    position: relative; }
+    .store h1::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 72px;
+      top: 0;
+      left: 0;
+      background-color: #9F1213;
+      margin-right: 16px; }
+
+.chose-store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .chose-store select {
+    font-size: 18px;
+    width: 304px;
+    padding: 6px 12px;
+    margin-left: 16px; }
+
+.store-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #212529;
+  margin-top: 41px; }
+
+.store-content {
+  width: 31.33%;
+  margin: 0 1% 48px; }
+  .store-content h2 {
+    padding: 8px 24px;
+    border: 1px solid #00000020;
+    font-size: 24px; }
+
+.store-contact {
+  border: 1px solid #00000020;
+  padding: 16px 24px; }
+  .store-contact li {
+    margin-bottom: 8px;
+    font-size: 20px; }
+
+.store-detail {
+  display: block;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  padding: 16px; }
+  .store-detail:hover {
+    background-color: #212529;
+    color: white;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
+.store-icon {
+  color: #212529;
+  font-size: 18px;
+  margin-right: 8px; }
+
+/*rwd*/
+@media (max-width: 992px) {
+  .store {
+    padding: 80px 12px; }
+  .store-content {
+    width: 48%;
+    margin: 0 1% 24px; } }
+
+@media (max-width: 768px) {
+  .store {
+    padding-top: 40px;
+    padding-bottom: 64px; }
+    .store h1 {
+      font-size: 24px;
+      margin-bottom: 24px; }
+      .store h1::before {
+        width: 8px;
+        height: 36px; }
+  .chose-store p {
+    font-size: 16px; }
+  .chose-store select {
+    width: 276px;
+    margin-left: 8px; }
+  .store-list {
+    margin-top: 24px; }
+  .store-content {
+    width: 98%; } }
 
 /*# sourceMappingURL=all.css.map */
