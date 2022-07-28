@@ -1,0 +1,112 @@
+.store{
+    @include container;
+    padding:96px 12px 80px 12px ;
+    h1{
+        padding-left: 20px;
+        margin-bottom: 32px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 72px;
+            top:0;
+            left:0;
+            background-color:#9F1213 ;
+            margin-right: 16px;
+        }
+    }
+}
+.chose-store{
+    display: flex;
+    align-items: center;
+    select{
+        font-size: 18px;
+        width: 304px;
+        padding: 6px 12px;
+        margin-left: 16px;
+    }
+}
+.store-list{
+    display: flex;
+    flex-wrap: wrap;
+    color:#212529 ;
+    margin-top: 41px;
+}
+.store-content{
+    width: 31.33%;
+    margin: 0 1% 48px;
+    h2{
+        padding: 8px 24px;
+        border: 1px solid #00000020;
+        font-size: 24px;
+    }
+}
+.store-contact{
+    border: 1px solid #00000020;
+    padding: 16px 24px;
+    li{
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+}
+.store-detail{
+    display: block;
+    background-color: #000000;
+    color:white ;
+    text-align: center;
+    font-size: 19px;
+    padding:16px  ;
+    &:hover{
+        background-color: #212529;
+        color:white;
+        transition: 0.5s;
+    }
+}
+.store-icon{
+    color:#212529 ;
+    font-size: 18px;
+    margin-right: 8px;
+}
+/*rwd*/
+@include ipad(){
+    .store{
+        padding: 80px 12px ;
+    }
+    .store-content{
+        width: 48%;
+        margin: 0 1% 24px;
+    }
+    
+}
+@include phone(){
+    .store{
+        padding-top: 40px;
+        padding-bottom: 64px;
+        h1{
+            font-size: 24px;
+            margin-bottom: 24px;
+            &::before {
+                width: 8px;
+                height: 36px;
+              }
+        }
+        
+    }
+    .chose-store{
+        p{
+            font-size: 16px;
+        }
+        select{
+            width: 276px;
+            margin-left: 8px;
+        }
+    }
+    .store-list{
+        margin-top: 24px;
+    }
+    .store-content{
+        width: 98%;
+    }
+
+}

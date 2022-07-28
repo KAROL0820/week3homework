@@ -71,16 +71,28 @@ h3{
 .classic-list{
     margin-top: 48px;
     display: flex;
+    
     li{
         width: 32.33%;
         margin-right: 2%;
         &:last-child{
             margin-right: 0px;
         }
+        
+        a:hover{
+            img{
+                opacity: 0.8;
+            }
+            p{
+                background-color: #AA0601;
+                color: white;}
+            
+           }
        p{
-        margin-top: 8px;
+        
         color:#AA0601 ;
        }
+       
     }
 }
 /*聯名*/
