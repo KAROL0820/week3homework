@@ -215,6 +215,8 @@ body {
     margin-right: 48px; }
     .footer-manu li a {
       color: white; }
+    .footer-manu li:hover {
+      opacity: 0.8; }
   @media (max-width: 768px) {
     .footer-manu {
       display: none; } }
@@ -225,6 +227,8 @@ body {
   display: flex; }
   .footer-social li {
     margin-left: 32px; }
+    .footer-social li a:hover {
+      opacity: 0.8; }
     @media (max-width: 768px) {
       .footer-social li {
         margin-left: 8px; } }
@@ -939,5 +943,60 @@ input[type="textarea"] {
     margin-top: 24px; }
   .store-content {
     width: 98%; } }
+
+/*台北中山旗艦店*/
+.taipei1-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 46px; }
+
+.taipei1-detail {
+  width: 40%;
+  margin-right: 2%; }
+  .taipei1-detail h2 {
+    padding: 8px 24px;
+    border: 1px solid #00000020;
+    font-size: 24px; }
+
+@media (max-width: 992px) {
+  .taipei1-content {
+    display: block; }
+  .taipei1-detail {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 24px; }
+    .taipei1-detail img {
+      width: 50%;
+      margin-right: 24px; }
+  .taipei1-flex {
+    display: block; }
+  .map {
+    width: 100%; } }
+
+@media (max-width: 768px) {
+  .taipei1-detail {
+    display: block; }
+    .taipei1-detail img {
+      width: 100%; } }
+
+.question-list {
+  margin-top: 24px; }
+  .question-list li {
+    margin-bottom: 32px; }
+    .question-list li h3 {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px; }
+
+@media (max-width: 768px) {
+  .question-list li {
+    margin-bottom: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
