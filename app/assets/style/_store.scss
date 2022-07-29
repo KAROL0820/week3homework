@@ -110,3 +110,48 @@
     }
 
 }
+/*台北中山旗艦店*/
+.taipei1-content{
+    display: flex;
+    margin-top: 46px;
+}
+.taipei1-detail{
+    width: 40%;
+    margin-right: 2%;
+    h2{
+            padding: 8px 24px;
+            border: 1px solid #00000020;
+            font-size: 24px;
+    }
+}
+@include ipad(){
+    .taipei1-content{
+        display: block;
+    }
+    .taipei1-detail{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        img{
+            width: 50%;
+            margin-right: 24px;
+        }
+    }
+    .taipei1-flex{
+        display: block;
+    }
+    .map{
+        width: 100%;
+    }
+}
+
+@include phone(){
+    .taipei1-detail{
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+    
+}

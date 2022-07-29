@@ -31,6 +31,9 @@
         a{
             color: white;
         }
+        &:hover{
+            opacity: 0.8;
+        }
     }
     @include phone(){
         display: none;
@@ -40,6 +43,9 @@
     display: flex;
     li{
         margin-left: 32px;
+        a:hover{
+            opacity: 0.8;
+        }
         @include phone(){
             margin-left: 8px;
         }
