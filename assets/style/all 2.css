@@ -93,11 +93,7 @@ body {
 /**/
 /**/
 .header {
-  background-color: #aa0601;
-  padding: 12px 0 12px 0; }
-  @media (max-width: 768px) {
-    .header {
-      padding: 16px 0 0 0; } }
+  background-color: #AA0601; }
   .header .header-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -121,11 +117,7 @@ body {
                 flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center;
-        padding: 0px; } }
-
-.header-list li a:hover {
-  opacity: 0.8; }
+                align-items: center; } }
 
 @media (max-width: 768px) {
   h1 {
@@ -156,10 +148,9 @@ body {
       .header-list li {
         padding-left: 0px;
         width: 50%;
-        border: 1px solid #fff; } }
+        border: 1px solid white; } }
     .header-list li a {
-      background-color: #aa0601;
-      color: #fff;
+      color: white;
       display: block;
       font-size: 20px; }
       @media (max-width: 768px) {
@@ -171,7 +162,7 @@ body {
       margin-top: 15.43px; } }
 
 .footer {
-  background-color: #aa0601;
+  background-color: #AA0601;
   padding: 48px 0 32px 0; }
   @media (max-width: 992px) {
     .footer {
@@ -194,7 +185,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border-bottom: 1px solid #fff; } }
+    border-bottom: 1px solid white; } }
 
 .footer-list {
   display: -webkit-box;
@@ -214,9 +205,7 @@ body {
   .footer-manu li {
     margin-right: 48px; }
     .footer-manu li a {
-      color: #fff; }
-    .footer-manu li:hover {
-      opacity: 0.8; }
+      color: white; }
   @media (max-width: 768px) {
     .footer-manu {
       display: none; } }
@@ -227,8 +216,6 @@ body {
   display: flex; }
   .footer-social li {
     margin-left: 32px; }
-    .footer-social li a:hover {
-      opacity: 0.8; }
     @media (max-width: 768px) {
       .footer-social li {
         margin-left: 8px; } }
@@ -243,13 +230,11 @@ body {
 
 .footer-contact {
   margin-top: 24px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid white;
   padding-bottom: 32px; }
   .footer-contact li a {
-    color: #fff;
+    color: white;
     font-size: 36px; }
-    .footer-contact li a:hover {
-      opacity: 0.8; }
     @media (max-width: 768px) {
       .footer-contact li a {
         font-size: 16px; } }
@@ -261,7 +246,7 @@ body {
 
 .material-symbols-outlined {
   font-size: 40px;
-  color: #fff;
+  color: white;
   margin-right: 16px; }
   @media (max-width: 768px) {
     .material-symbols-outlined {
@@ -276,7 +261,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .privacy p {
-    color: #fff;
+    color: white;
     font-size: 16px; }
     @media (max-width: 768px) {
       .privacy p {
@@ -300,10 +285,8 @@ body {
         margin-left: 0;
         margin-bottom: 8px; } }
     .privacy-list li a {
-      color: #fff;
+      color: white;
       font-size: 14px; }
-      .privacy-list li a:hover {
-        opacity: 0.8; }
       @media (max-width: 768px) {
         .privacy-list li a {
           font-size: 16px; } }
@@ -333,11 +316,11 @@ body {
   .banner-content .btn {
     padding: 6px 12px;
     font-size: 20px;
-    background-color: #aa0601;
-    color: #fff; }
+    background-color: #AA0601;
+    color: #FFF; }
   .banner-content .btn:hover {
-    color: #aa0601;
-    background-color: #fff;
+    color: #AA0601;
+    background-color: #FFF;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
@@ -350,7 +333,7 @@ h3 {
 
 /*專業服務*/
 .sever {
-  background-color: #fbf2f2; }
+  background-color: #FBF2F2; }
 
 .sever-content {
   margin: 0 auto;
@@ -399,13 +382,9 @@ h3 {
     margin-right: 2%; }
     .classic-list li:last-child {
       margin-right: 0px; }
-    .classic-list li a:hover img {
-      opacity: 0.8; }
-    .classic-list li a:hover p {
-      background-color: #aa0601;
-      color: #fff; }
     .classic-list li p {
-      color: #aa0601; }
+      margin-top: 8px;
+      color: #AA0601; }
 
 /*聯名*/
 .design {
@@ -419,7 +398,7 @@ h3 {
   max-width: 1320px;
   padding: 0 12px; }
   .design-content h3 {
-    color: #fff; }
+    color: white; }
 
 .design-list {
   margin-top: 48px;
@@ -432,8 +411,8 @@ h3 {
   .design-list li {
     width: 50%; }
     .design-list li p {
-      color: #aa0601;
-      background-color: #fff; }
+      color: #AA0601;
+      background-color: white; }
 
 .design-double {
   background-image: url(../images/home-section4-1.png);
@@ -467,7 +446,7 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .customer-list li {
-    border: 1px solid #dee2e6;
+    border: 1px solid #DEE2E6;
     border-radius: 4px;
     -webkit-box-shadow: 0px 2px 6px #00000029;
             box-shadow: 0px 2px 6px #00000029;
@@ -494,7 +473,7 @@ h3 {
 
 /*表格*/
 .form {
-  background-color: #fbf2f2; }
+  background-color: #FBF2F2; }
 
 .form-content {
   margin: 0 auto;
@@ -536,15 +515,15 @@ input[type="textarea"] {
   display: block;
   margin: 0 auto;
   width: 416px;
-  color: #fff;
+  color: #FFF;
   padding: 16px;
   border: none;
   font-weight: bold;
-  background-color: #aa0601; }
+  background-color: #AA0601; }
 
 .submit:hover {
-  color: #aa0601;
-  background-color: #fff;
+  color: #AA0601;
+  background-color: #FFF;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -622,389 +601,5 @@ input[type="textarea"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
-
-.nav {
-  margin: 0 auto;
-  max-width: 1320px;
-  padding: 0 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.nav > li {
-  text-align: center;
-  width: 100%;
-  border-left: 1px solid #DCDCDC; }
-  .nav > li:last-child {
-    border-right: 1px solid #DCDCDC; }
-  .nav > li a {
-    padding: 24px 0;
-    font-size: 32px;
-    font-weight: 500;
-    display: block;
-    border-bottom: 8px solid transparent; }
-    .nav > li a:hover {
-      border-bottom: 8px solid #aa0601; }
-
-.nav-pic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 80px; }
-
-.left-pic {
-  background-image: url(../images/product-header-1.png);
-  height: 296px;
-  background-size: cover;
-  background-position: center;
-  width: 50%; }
-
-.right-pic {
-  background-image: url(../images/product-header-2.png);
-  height: 296px;
-  background-size: cover;
-  background-position: center;
-  width: 50%; }
-
-.optical {
-  margin: 0 auto;
-  max-width: 1320px;
-  padding: 0 12px; }
-  .optical h1 {
-    font-size: 42px;
-    text-align: center; }
-  .optical > p {
-    font-size: 32px;
-    text-align: center; }
-
-.optical-list {
-  margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .optical-list li {
-    row-gap: 24px;
-    -webkit-column-gap: 80px;
-       -moz-column-gap: 80px;
-            column-gap: 80px;
-    width: 23.5%;
-    margin-bottom: 80px; }
-    .optical-list li p {
-      color: #000;
-      font-size: 24px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .optical-list li p span {
-        color: #aa0601;
-        font-weight: 500; }
-
-.color {
-  position: relative; }
-  .color::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    width: 24px;
-    height: 24px;
-    border-radius: 4px;
-    background-color: #5f3e2d; }
-  .color::after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 32px;
-    width: 24px;
-    height: 24px;
-    border-radius: 4px;
-    background-color: #b75929; }
-
-.product-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 80px; }
-  .product-page li {
-    border: 1px solid #555555;
-    border-right: none;
-    font-size: 18px; }
-    .product-page li:last-child {
-      border-right: 1px solid #555555; }
-    .product-page li a {
-      display: block;
-      color: #000;
-      padding: 12px 16px; }
-      .product-page li a:hover {
-        background-color: #000;
-        color: #fff;
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s; }
-
-/*rwd*/
-@media (max-width: 992px) {
-  .nav {
-    padding: 0; }
-    .nav li a {
-      font-size: 24px;
-      padding: 16px 0; }
-  .left-pic {
-    background-image: url(../images/product-header-sm-1.png); }
-  .right-pic {
-    background-image: url(../images/product-header-sm-2.png); }
-  .optical-list {
-    margin-bottom: 56px; }
-    .optical-list li {
-      width: 48%;
-      margin: 0 1% 64px; } }
-
-@media (max-width: 768px) {
-  .nav > li > a {
-    font-size: 16px; }
-  .nav-pic {
-    margin-bottom: 40px; }
-  .left-pic, .right-pic {
-    height: 136px; }
-  .optical h1 {
-    font-size: 24px; }
-  .optical > p {
-    font-size: 24px;
-    margin-bottom: 24px; }
-  .optical-list {
-    margin-bottom: 40px; }
-    .optical-list li {
-      width: 98%;
-      margin: 0 1% 48px; }
-  .product-page {
-    margin-bottom: 64px; }
-    .product-page li {
-      font-size: 16px; }
-      .product-page li a {
-        padding: 8px 10px; } }
-
-/*太陽眼鏡*/
-.sunglass-left-pic {
-  width: 50%;
-  background-image: url(../images/product-header-3.png);
-  height: 296px;
-  background-size: cover;
-  background-position: center; }
-
-.sunglass-right-pic {
-  width: 50%;
-  background-image: url(../images/product-header-4.png);
-  height: 296px;
-  background-size: cover;
-  background-position: center; }
-
-.sunglasses-list {
-  margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .sunglasses-list li {
-    width: 31%;
-    margin: 0 1% 104px; }
-    .sunglasses-list li p {
-      color: #000;
-      font-size: 24px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .sunglasses-list li p span {
-        color: #aa0601;
-        font-weight: 500; }
-
-@media (max-width: 992px) {
-  .sunglass-left-pic {
-    background-image: url(../images/product-header-sm-3.png); }
-  .sunglass-right-pic {
-    background-image: url(../images/product-header-sm-4.png); }
-  .sunglasses-list li {
-    width: 48%;
-    margin: 0 1% 64px; } }
-
-@media (max-width: 768px) {
-  .sunglass-left-pic, .sunglass-right-pic {
-    height: 136px; }
-  .sunglasses-list {
-    margin-bottom: 40px; }
-    .sunglasses-list li {
-      width: 98%;
-      margin: 0 1% 48px; } }
-
-.store {
-  margin: 0 auto;
-  max-width: 1320px;
-  padding: 0 12px;
-  padding: 96px 12px 80px 12px; }
-  .store h1 {
-    padding-left: 20px;
-    margin-bottom: 32px;
-    position: relative; }
-    .store h1::before {
-      content: '';
-      position: absolute;
-      width: 10px;
-      height: 72px;
-      top: 0;
-      left: 0;
-      background-color: #9F1213;
-      margin-right: 16px; }
-
-.chose-store {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .chose-store select {
-    font-size: 18px;
-    width: 304px;
-    padding: 6px 12px;
-    margin-left: 16px; }
-
-.store-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  color: #212529;
-  margin-top: 41px; }
-
-.store-content {
-  width: 31.33%;
-  margin: 0 1% 48px; }
-  .store-content h2 {
-    padding: 8px 24px;
-    border: 1px solid #00000020;
-    font-size: 24px; }
-
-.store-contact {
-  border: 1px solid #00000020;
-  padding: 16px 24px; }
-  .store-contact li {
-    margin-bottom: 8px;
-    font-size: 20px; }
-
-.store-detail {
-  display: block;
-  background-color: #000;
-  color: white;
-  text-align: center;
-  font-size: 19px;
-  padding: 16px; }
-  .store-detail:hover {
-    background-color: #212529;
-    color: white;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
-
-.store-icon {
-  color: #212529;
-  font-size: 18px;
-  margin-right: 8px; }
-
-/*rwd*/
-@media (max-width: 992px) {
-  .store {
-    padding: 80px 12px; }
-  .store-content {
-    width: 48%;
-    margin: 0 1% 24px; } }
-
-@media (max-width: 768px) {
-  .store {
-    padding-top: 40px;
-    padding-bottom: 64px; }
-    .store h1 {
-      font-size: 24px;
-      margin-bottom: 24px; }
-      .store h1::before {
-        width: 8px;
-        height: 36px; }
-  .chose-store p {
-    font-size: 16px; }
-  .chose-store select {
-    width: 276px;
-    margin-left: 8px; }
-  .store-list {
-    margin-top: 24px; }
-  .store-content {
-    width: 98%; } }
-
-/*台北中山旗艦店*/
-.taipei1-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 46px; }
-
-.taipei1-detail {
-  width: 40%;
-  margin-right: 2%; }
-  .taipei1-detail h2 {
-    padding: 8px 24px;
-    border: 1px solid #00000020;
-    font-size: 24px; }
-
-@media (max-width: 992px) {
-  .taipei1-content {
-    display: block; }
-  .taipei1-detail {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 24px; }
-    .taipei1-detail img {
-      width: 50%;
-      margin-right: 24px; }
-  .taipei1-flex {
-    display: block; }
-  .map {
-    width: 100%; } }
-
-@media (max-width: 768px) {
-  .taipei1-detail {
-    display: block; }
-    .taipei1-detail img {
-      width: 100%; } }
-
-.question-list {
-  margin-top: 24px; }
-  .question-list li {
-    margin-bottom: 32px; }
-    .question-list li h3 {
-      color: #000;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 8px; }
-
-@media (max-width: 768px) {
-  .question-list li {
-    margin-bottom: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
