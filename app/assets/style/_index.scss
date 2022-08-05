@@ -6,7 +6,7 @@
 }
 .banner-content{
     @include container;
-    color: #650300;
+    color: $secondary;
     text-align: right;
     padding-top: 296px;
     h2{
@@ -15,24 +15,24 @@
     .btn{
         padding: 6px 12px;
         font-size: 20px;
-        background-color:#AA0601;
-        color: #FFF;
+        background-color:$primary;
+        color: $white;
     }
     .btn:hover{
-        color: #AA0601;
-        background-color: #FFF;
+        color: $primary;
+        background-color: $white;
         transition:0.5s ;
     }
 }
 h3{
-    color:#650300 ;
+    color:$secondary ;
 }
 .pd80{
     padding: 80px 0;
 }
 /*專業服務*/
 .sever{
-    background-color:#FBF2F2 ;
+    background-color:$light ;
 }
 .sever-content{
     @include container;
@@ -54,7 +54,7 @@ h3{
         h4{
             font-size: 24px;
             font-weight: bold;
-            color:#650300 ;
+            color:$secondary ;
             margin-bottom: 8px;
         }
         p{
@@ -84,13 +84,13 @@ h3{
                 opacity: 0.8;
             }
             p{
-                background-color: #AA0601;
-                color: white;}
+                background-color:$primary;
+                color: $white;}
             
            }
        p{
         
-        color:#AA0601 ;
+        color:$primary ;
        }
        
     }
@@ -105,7 +105,7 @@ h3{
 .design-content{
     @include container;
     h3{
-        color: white;
+        color: $white;
     }
 }
 .design-list{
@@ -115,8 +115,8 @@ h3{
     li{
         width: 50%;
         p{
-            color: #AA0601;
-            background-color: white;
+            color: $primary;
+            background-color: $white;
         }
     }
 }
@@ -145,7 +145,7 @@ h3{
     margin-top: 48px;
     justify-content: space-between;
     li{
-        border: 1px solid #DEE2E6;
+        border: 1px solid $gray-light;
         border-radius: 4px;
         box-shadow: 0px 2px 6px #00000029;
         width: 23%;
@@ -169,7 +169,7 @@ h3{
 }
 /*表格*/
 .form{
-    background-color: #FBF2F2;
+    background-color: $light;
     
 }
 .form-content{
@@ -191,14 +191,14 @@ h3{
 input[type="text"]{
     width: 100%;
     padding: 6px 12px;
-    border:1px solid #000;
+    border:1px solid $black;
     margin-bottom: 16px;
 }
 input[type="textarea"]{
     height: 136px;
     width: 100%;
     padding: 6px 12px 102px;
-    border:1px solid #000;
+    border:1px solid $black;
     margin-bottom: 16px;
 }
 .agree{
@@ -213,15 +213,15 @@ input[type="textarea"]{
     display: block;
    margin: 0 auto;
     width: 416px;
-    color: #FFF;
+    color: $white;
     padding: 16px;
     border: none;
     font-weight: bold;
-    background-color:#AA0601;
+    background-color:$primary;
 }
 .submit:hover{
-    color: #AA0601;
-    background-color: #FFF;
+    color: $primary;
+    background-color: $white;
     transition:0.5s ;
     cursor: pointer;
 }

@@ -1,8 +1,8 @@
 .footer{
-    background-color:#AA0601 ;
+    background-color:$primary ;
     padding: 48px 0 32px 0;
     
-    @include ipad(){
+    @include ipad{
         padding: 48px 0 40px 0;
     }
 }
@@ -10,11 +10,11 @@
     @include container;
 }
 .footer-content{
-    @include phone(){
+    @include phone{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $white;
 
     }
 }
@@ -29,13 +29,13 @@
     li{ 
         margin-right: 48px;
         a{
-            color: white;
+            color: $white;
         }
         &:hover{
             opacity: 0.8;
         }
     }
-    @include phone(){
+    @include phone{
         display: none;
     }
 }
@@ -46,15 +46,15 @@
         a:hover{
             opacity: 0.8;
         }
-        @include phone(){
+        @include phone{
             margin-left: 8px;
         }
             img{
                 max-width:48px ;
-                @include ipad (){
+                @include ipad {
                     max-width: 40px;
                 }  
-                @include phone(){
+                @include phone{
                     max-width: 24px;
                 }
         }
@@ -62,18 +62,21 @@
 }
 .footer-contact{
     margin-top: 24px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $white;
     padding-bottom:32px ;
     li{
         a{
-            color: white;
+            color: $white;
             font-size: 36px;
-            @include phone(){
+            &:hover{
+                opacity: 0.8;
+            }
+            @include phone{
                 font-size: 16px;
             }
         }
     }
-    @include phone(){
+    @include phone{
         margin-top: 0px;
         border-bottom: none;
        padding-bottom: 24px;
@@ -82,9 +85,9 @@
 }
 .material-symbols-outlined{
     font-size: 40px;
-    color: white;
+    color: $white;
     margin-right:16px ;
-    @include phone(){
+    @include phone{
         font-size: 20px;
     }
 }
@@ -93,9 +96,9 @@
     display: flex;
     justify-content: space-between;
     p{
-        color: white;
+        color: $white;
         font-size: 16px;
-        @include phone(){
+        @include phone{
             margin-bottom: 8px;
         }
     }
@@ -114,20 +117,23 @@
             margin-bottom: 8px;
         }
         a{
-            color: white;
+            color: $white;
             font-size: 14px;
-            @include phone(){
+            &:hover{
+                opacity: 0.8;
+            }
+            @include phone{
                 font-size: 16px;
             }
         }
     }
-    @include phone(){
+    @include phone{
         display: block;
 
     }
 }
 
-@include phone(){
+@include phone{
    .footer{
     padding:24px 0 ;
    }
